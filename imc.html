@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+    
+    <script>
+        function paragrafo(){
+                
+            document.write("<p></p>");
+        }
+        function texto(frase) {
+                
+            document.write(frase);
+            paragrafo();
+       }
+        function calculo_imc(peso, altura) {
+            
+            return peso / (altura * altura);
+
+        } // função de dois parametros... usado para calcular imc.
+          // 'return' ira nos dar o retorno do calculo imc.  
+            
+            var imcRenan = calculo_imc(60, 1.73);
+            var imcNicolas = calculo_imc(56, 1.77);
+            var imcClaudia = calculo_imc(69, 1.60);
+            
+        //Usando as variaveis, consigo ter o resultado desejado e com codigos simples.
+        texto("Imc Renan " + imcRenan);
+        texto("Imc Claudia " + imcClaudia);
+        document.write("Imc Nicolas " + imcNicolas);
+    </script>
