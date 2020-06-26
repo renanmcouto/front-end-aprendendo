@@ -17,12 +17,41 @@
         } // função de dois parametros... usado para calcular imc.
           // 'return' ira nos dar o retorno do calculo imc.  
             
-            var imcRenan = calculo_imc(60, 1.73);
-            var imcNicolas = calculo_imc(56, 1.77);
-            var imcClaudia = calculo_imc(69, 1.60);
-            
+            /*  var imcRenan = calculo_imc(60, 1.73);
+                var imcNicolas = calculo_imc(56, 1.77);
+                var imcClaudia = calculo_imc(69, 1.60);
+            */
+
         //Usando as variaveis, consigo ter o resultado desejado e com codigos simples.
-        texto("Imc Renan " + imcRenan);
-        texto("Imc Claudia " + imcClaudia);
-        document.write("Imc Nicolas " + imcNicolas);
+
+        /*  texto("Imc Renan " + imcRenan);
+            texto("Imc Claudia " + imcClaudia);
+            document.write("Imc Nicolas " + imcNicolas);
+        */
+        
+        // Tambem usando prompt, conseguigos fazer todos os imc de amigos..
+
+            var nome = prompt("Qual seu nome ?");
+            var informeAltura = prompt(`Olá ${nome}, qual sua altura ?`);
+            var informePeso = prompt(`${nome}, qual seu peso ?`);
+            
+            var imc = calculo_imc(informePeso, informeAltura);
+
+        texto(`${nome}, seu imc é ${imc}`);
+
+        if(imc < 18.5) {
+            
+            document.write("Você esta abaixo do recomendado!");
+        
+        }
+        if(imc > 26.5) {
+
+            document.write("Você esta a cima do recomendado!");
+
+        }
+        if(imc >= 18.5 && imc <= 26.5) {
+
+            document.write("Você esta em perfeitas condições");
+            
+        }
     </script>
