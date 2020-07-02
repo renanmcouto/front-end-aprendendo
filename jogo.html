@@ -1,0 +1,22 @@
+<meta charset="utf-8">
+
+<script>
+    function sorteia(numero) {
+
+        return Math.round(Math.random() * numero);
+    }
+        var numeroSorteado = sorteia (10)
+        var teste_suaSorte = Number.parseInt(window.prompt("Chute um numero!"));
+    
+    if (teste_suaSorte == numeroSorteado) {
+
+        document.write("Você acertou!!!");
+    } else if (teste_suaSorte > numeroSorteado) {
+
+        document.write("Você errou, o numero é menor");
+    } else {
+
+        document.write("Você errou, o numero é maior");
+    }
+    
+</script>
