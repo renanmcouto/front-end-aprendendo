@@ -6,17 +6,22 @@
         return Math.round(Math.random() * numero);
     }
         var numeroSorteado = sorteia (10)
-        var teste_suaSorte = Number.parseInt(window.prompt("Chute um numero!"));
-    
-    if (teste_suaSorte == numeroSorteado) {
+        var tentativas = 1
 
-        document.write("Você acertou!!!");
-    } else if (teste_suaSorte > numeroSorteado) {
+    while (tentativas <= 3) {
+           var teste_suaSorte = Number.parseInt(window.prompt("Chute um numero!"));
+        
+        if (teste_suaSorte == numeroSorteado) {
 
-        document.write("Você errou, o numero é menor");
-    } else {
+            document.write("Você acertou!!!<br>");
+            break;
+        } else if (teste_suaSorte > numeroSorteado) {
 
-        document.write("Você errou, o numero é maior");
+            document.write("Você errou, o numero é menor<br>");
+        } else {
+
+            document.write("Você errou, o numero é maior<br>");
+        }
+        tentativas++
     }
-    
-</script>
+    </script>
