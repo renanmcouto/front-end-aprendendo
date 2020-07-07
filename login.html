@@ -1,0 +1,29 @@
+<meta charset="utf-8">
+<script>       
+        var loginCadastrado = "Azura";
+        var senhaCadastrado = "Ashura";
+        
+    
+        var tentativas = 1;
+        var total = 3;
+
+        while (tentativas <= total) {
+                
+                var login = window.prompt("Indorme seu login:");
+                var senha = window.prompt("Infoeme sua senha:");
+            
+            if (loginCadastrado == login && senhaCadastrado == senha) {
+
+                alert("Acesso liberado");
+                break; // Irar quebrar o loop 
+            } else if (tentativas == 3) {
+
+                alert("Numero de tentativas Ultrapassado:");
+            } else {
+                alert("Login invalido. Tente novamente:");
+            }
+            // incrementa mais uma tentativa
+            tentativas ++
+        } 
+
+</script>
