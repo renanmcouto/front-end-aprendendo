@@ -100,3 +100,24 @@
                 document.write("Teve copa do mundo nos anos, " + Copa + "<br>");
             }
         </script>
+
+        <h3> Sétima aula de JavaScript: Interaja de maneira diferente</h3>
+        <input/>
+        <button><strong>Login</strong></button>
+        
+        <script>
+            var login = "AAzura"
+            var input = document.querySelector("input");
+            input.focus();
+
+            function leitura () {
+                if (input.value == login) {
+                    document.write("BEM-VINDO Renan");
+                } else {
+                    document.write("ACESSO NEGADO");
+                }
+            }
+
+            var button = document.querySelector("button");
+            button.onclick = leitura;
+        </script>
