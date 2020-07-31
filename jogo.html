@@ -3,14 +3,14 @@
 <script>
     function sorteia(numero) {
 
-        return Math.round(Math.random() * numero);
+        return Math.round(Math.random() * numero); // Da o retorno da fução..
     }
         var numeroSorteado = sorteia (10)
         console.log(numeroSorteado);
 
         var tentativas = 1
 
-    while (tentativas <= 3) {
+    while (tentativas <= 3) { // Cria um loop....
            var teste_suaSorte = Number.parseInt(window.prompt("Chute um numero!"));
         
         if (teste_suaSorte == numeroSorteado) {
